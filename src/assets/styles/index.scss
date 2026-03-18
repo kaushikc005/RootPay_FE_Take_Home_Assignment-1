@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    border-color: #e5e7eb;
+  }
+
+  body {
+    background-color: #f9fafb;
+    color: #132c4a;
+    font-family: "Rubik", ui-sans-serif, system-ui, sans-serif;
+  }
+}
