@@ -80,7 +80,7 @@ export default function OnboardingLayout({
           <div className="flex-1 lg:flex-none lg:w-[708px] flex flex-col">
             <ProgressBar currentStep={currentStep} totalSteps={totalSteps} />
 
-            <div className="flex-1 overflow-y-auto px-5 py-5 sm:px-8 sm:py-6 lg:px-10 lg:py-10 flex flex-col  bg-white sm:rounded-2xl sm:shadow-[0_20px_60px_rgba(0,0,0,0.12)]">
+            <div className="flex-1 overflow-y-auto px-5 py-5 sm:px-8 sm:py-6 lg:px-10 lg:py-10 flex flex-col  bg-[#ffffff] sm:rounded-2xl sm:shadow-[0_20px_60px_rgba(0,0,0,0.12)]">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={currentStep}
