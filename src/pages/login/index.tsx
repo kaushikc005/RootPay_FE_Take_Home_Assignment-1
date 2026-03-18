@@ -25,7 +25,7 @@ export default function LoginFlow() {
   });
   const navigate = useNavigate();
 
-  const updateData = (partial) => {
+  const updateData = (partial: Partial<typeof formData>) => {
     setFormData((prev) => ({ ...prev, ...partial }));
   };
 

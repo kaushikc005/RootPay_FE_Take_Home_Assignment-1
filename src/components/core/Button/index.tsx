@@ -1,4 +1,3 @@
-import React from "react";
 import type { ReactElement, CSSProperties } from "react";
 import "./styles.scss";
 
@@ -76,7 +75,9 @@ export default function Button({
             <path d="M21 12a9 9 0 1 1-6.219-8.56" />
           </svg>
           {loadingText && (
-            <span className={`${loadingTextClasses} ${["secondary", "tertiary", "ghost"].includes(variant) ? "text-gray-900" : "text-white"}`}>
+            <span
+              className={`${loadingTextClasses} ${["secondary", "tertiary", "ghost"].includes(variant) ? "text-gray-900" : "text-white"}`}
+            >
               {loadingText}
             </span>
           )}

@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import StepNavigation from "./StepNavigation";
 
 interface FormData {
@@ -68,7 +68,7 @@ export default function UserOTPVerification({
           {otp.map((digit, i) => (
             <input
               key={i}
-              ref={(el) => (inputRefs.current[i] = el)}
+              ref={(el) => { inputRefs.current[i] = el; }}
               type="text"
               inputMode="numeric"
               maxLength={1}
