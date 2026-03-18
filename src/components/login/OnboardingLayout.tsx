@@ -47,12 +47,9 @@ export default function OnboardingLayout({
         className="hidden sm:block absolute inset-0 w-full h-full object-cover z-0"
       />
 
-      {/* Outer wrapper: full-screen on mobile, centered on sm+, locked height on lg */}
       <div className="relative z-10 flex flex-col min-h-screen sm:items-center sm:justify-center sm:p-6 lg:px-16 lg:py-10 lg:h-screen lg:overflow-hidden">
-        {/* Card: full-screen on mobile, floating card on sm+, two-panel on lg */}
-        <div className="flex-1 sm:flex-none w-full sm:max-w-[580px] lg:max-w-[1280px] flex flex-col lg:flex-row sm:rounded-2xl overflow-hidden sm:shadow-[0_20px_60px_rgba(0,0,0,0.12)] lg:h-full">
-          {/* Left panel — desktop only */}
-          <div className="hidden lg:flex flex-col justify-between flex-1 p-10 bg-[#edeef2]">
+        <div className="flex-1 sm:flex-none w-full sm:max-w-[580px] lg:max-w-[1280px] flex flex-col lg:flex-row  overflow-hidden  lg:h-full">
+          <div className="hidden lg:flex flex-col justify-between flex-1 p-10 ">
             <div>
               <p className="text-2xl text-muted-foreground mb-2">
                 Let's get started
@@ -80,10 +77,10 @@ export default function OnboardingLayout({
           </div>
 
           {/* Right panel */}
-          <div className="flex-1 lg:flex-none lg:w-[708px] flex flex-col bg-white">
+          <div className="flex-1 lg:flex-none lg:w-[708px] flex flex-col">
             <ProgressBar currentStep={currentStep} totalSteps={totalSteps} />
 
-            <div className="flex-1 overflow-y-auto px-5 py-5 sm:px-8 sm:py-6 lg:px-10 lg:py-10 flex flex-col">
+            <div className="flex-1 overflow-y-auto px-5 py-5 sm:px-8 sm:py-6 lg:px-10 lg:py-10 flex flex-col  bg-white sm:rounded-2xl sm:shadow-[0_20px_60px_rgba(0,0,0,0.12)]">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={currentStep}
